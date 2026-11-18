@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AWS Terraform HA Project</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI',sans-serif;
+}
+
+body{
+background:linear-gradient(135deg,#0f172a,#1e293b,#2563eb);
+color:white;
+min-height:100vh;
+}
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.hero h1{
+font-size:3rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.2rem;
+max-width:900px;
+margin:auto;
+line-height:1.8;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+padding:20px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:40px;
+}
+
+.card{
+background:rgba(255,255,255,0.1);
+padding:25px;
+border-radius:20px;
+backdrop-filter:blur(10px);
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card h2{
+color:#38bdf8;
+margin-bottom:10px;
+}
+
+.architecture{
+margin-top:50px;
+background:white;
+color:#111;
+padding:30px;
+border-radius:20px;
+}
+
+.architecture h2{
+text-align:center;
+margin-bottom:20px;
+color:#2563eb;
+}
+
+.architecture pre{
+font-size:16px;
+font-weight:bold;
+overflow:auto;
+}
+
+.footer{
+text-align:center;
+padding:40px;
+font-size:18px;
+}
+
+.badge{
+display:inline-block;
+background:#22c55e;
+padding:10px 20px;
+border-radius:30px;
+margin-top:20px;
+font-weight:bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+<h1>🚀 AWS Highly Available Infrastructure Project</h1>
+
+<p>
+Designed and deployed a production-style AWS infrastructure using Terraform Modules,
+GitHub Actions, Remote State Management, Load Balancer and Auto Scaling concepts.
+</p>
+
+<div class="badge">
+✅ Successfully Deployed in AWS us-east-1
+</div>
+</section>
+
+
+<div class="container">
+
+<div class="grid">
+
+<div class="card">
+<h2>🌐 Networking</h2>
+<p>
+Custom VPC, Public Subnets, Private Subnets,
+Internet Gateway, NAT Gateway and Route Tables.
+</p>
+</div>
+
+<div class="card">
+<h2>🔒 Security</h2>
+<p>
+Security Groups configured for Bastion Host,
+ALB and Private Application Servers.
+</p>
+</div>
+
+<div class="card">
+<h2>🖥 Compute</h2>
+<p>
+EC2 Bastion Host, Launch Templates and
+Auto Scaling Group across multiple AZs.
+</p>
+</div>
+
+<div class="card">
+<h2>⚖ Load Balancing</h2>
+<p>
+Application Load Balancer with Target Groups
+and 

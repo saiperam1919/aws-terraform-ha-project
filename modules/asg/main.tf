@@ -26,12 +26,18 @@ resource "aws_launch_template" "app" {
 
 yum update -y
 
-yum install -y httpd
+yum install -y docker
 
-systemctl start httpd
-systemctl enable httpd
+systemctl start docker
+systemctl enable docker
 
-echo "Hello from Auto Scaling Group" > /var/www/html/index.html
+docker pull saiperam19/aws-ha-project:v1
+
+docker run -d \
+--name aws-ha-project \
+-p 80:80 \
+saiperam19/aws-ha-project:v1
+
 EOF
   )
 }
